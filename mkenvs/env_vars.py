@@ -40,9 +40,12 @@ class EnvVars:
 
 if __name__ == "__main__":
     print()
-    print(EnvVars.get_python_projects())
-    print(EnvVars.get_python_packages())
-    print(EnvVars.get_python_quotes())
+    projects = EnvVars.get_python_projects() 
+    packages = EnvVars.get_python_packages()
+    quotes = EnvVars.get_python_quotes()
+    print(projects, os.path.exists(projects))
+    print(packages, os.path.exists(packages))
+    print(quotes, os.path.exists(quotes))
     print()
 
 
