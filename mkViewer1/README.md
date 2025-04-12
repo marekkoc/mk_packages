@@ -8,6 +8,11 @@ mkViewer is a simple Python-based tool for visualizing 3D medical image data. It
   <tr><td align="center"><i><span style="font-size:smaller;">Selected slice of ToF 3D image.</span></i></td></tr>
 </table>
 
+<table align="center">
+  <tr><td><img src="figs/fig1.png" alt="Results"></td></tr>
+  <tr><td align="center"><i><span style="font-size:smaller;">Selected slice from 3D image</span></i></td></tr>
+</table>
+
 ## Features
 - Interactive slice-by-slice navigation through 3D volumes
 - Maximum Intensity Projection (MIP) views along all three principal axes
