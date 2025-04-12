@@ -27,6 +27,53 @@ from matplotlib.widgets import Slider, Button, RadioButtons
 
 
 class Viewer3D:
+    """
+        ## Usage
+        ### Basic Usage
+        ```
+        python mkViewer1.py path/to/your/image_file.npy
+        ```
+
+        ### For NIfTI Files
+        ```
+        python mkViewer1.py path/to/your/image_file.nii
+        python mkViewer1.py path/to/your/image_file.nii.gz
+        ```
+
+        ### For Raw Binary Files
+        ```
+        python mkViewer1.py path/to/your/image_file.raw size datatype
+        ```
+        Where:
+        - `size` is the cubic dimension (assuming equal dimensions)
+        - `datatype` is the numpy datatype (e.g., 'float32', 'uint16')
+
+        ### Interface Controls
+        - **Slider**: Navigate through slices
+        - **Mouse wheel**: Scroll through slices
+        - **Radio buttons**: Change colormap
+        - **Reset button**: Return to the middle slice
+        - **Keyboard**:
+        - `1`: Show Maximum Intensity Projections
+        - `2`: Show Mean value projections
+        - `3`: Show Standard Deviation projections
+        - `4`: Show Minimum Intensity Projections
+
+        ## Example
+        ```python
+        import numpy as np
+        from mkViewer1 import Viewer3D
+
+        # Create a sample 3D array
+        data = np.random.rand(64, 64, 64)
+
+        # Launch the viewer
+        Viewer3D(data, "Sample Data")
+        ```
+
+        ## Author
+        - Marek Kocinski (marekkoc)
+    """
 
     def __init__(self, X, figName='', debug=True):
         """ """
