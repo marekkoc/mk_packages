@@ -5,7 +5,7 @@ mkViewer is a simple Python-based tool for visualizing 3D medical image data. It
 
 <table align="center">
   <tr><td align="center><img src="figs/fig1.png" alt="viewer.png"></td></tr>
-  <tr><td align="center"><i><span style="font-size:smaller;">Selected slice of ToF 3D image./span></i></td></tr>
+  <tr><td align="center"><i><span style="font-size:smaller;">Selected slice of ToF 3D image.</span></i></td></tr>
 </table>
 
 ## Features
